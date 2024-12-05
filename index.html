@@ -3,13 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vue</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
     <div id="myApp">
-
+        <h1>Hola Mundo</h1>
+        <p>Con Vue.js</p>
+        <p>{{ 2 + 5 }}</p>
+        <p>{{['a','b','c'].join(' - ')}}</p>
+        <p>{{[1,2,3,4,5,6]}}</p>
+        <p>{{ {nombre: 'Juan', apellido: 'Toscano'} }}</p>
+        <p>{{{nombre: 'Juan', apellido: 'Toscano'}.nombre}}</p>
+        <p>{{true ? 'Activo' : 'Inactivo'}}</p>
+        <p>{{false ? 'Activo' : 'Inactivo'}}</p>
+        <p>{{1===1}}
+        <p>{{ 1 === 1 ? 'Es igual' : 'No es igual' }}</p>
+        <p>El mensaje es: {{mensaje}}</p>
+        <p>La edad es: {{edad}}</p>
+        <p>{{edad === 25}}</p>
+        <p>{{edad !== 25}}</p>
+        <button v-on:click="cambiarMensaje">Cambiar Mensaje</button>
     </div>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    {{ 1 + 2 }}
+   
     <script src="./js/app.js"></script>
 </body>
 </html>
